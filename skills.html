@@ -1,0 +1,19 @@
+<div class="skills-page">
+  <h2>Technical Skills</h2>
+  <p class="subtitle">Skill proficiency overview</p>
+
+  <div class="skills-grid">
+    <div class="skill-card" *ngFor="let s of skills">
+      <h3>{{ s.name }}</h3>
+
+      <div class="progress-bar">
+        <div
+          class="progress-fill {{ s.color }}"
+          [style.width.%]="s.level">
+        </div>
+      </div>
+
+      <span class="percentage">{{ s.level }}%</span>
+    </div>
+  </div>
+</div>

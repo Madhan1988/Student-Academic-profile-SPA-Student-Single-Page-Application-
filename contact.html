@@ -1,0 +1,49 @@
+<div class="contact-page">
+  <h2>Contact Me</h2>
+  <p class="subtitle">Feel free to reach out</p>
+
+  <div class="contact-container">
+    <!-- Contact Details -->
+    <div class="contact-info">
+      <h3>My Details</h3>
+
+      <p><strong>Email:</strong> madhan@email.com</p>
+      <p><strong>Phone:</strong> +91 9XXXXXXXXX</p>
+      <p><strong>Location:</strong> Gujarat, India</p>
+
+      <div class="socials">
+        <span>🌐 LinkedIn</span>
+        <span>🐙 GitHub</span>
+        <span>📸 Instagram</span>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" (ngSubmit)="submitForm()">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        [(ngModel)]="name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        [(ngModel)]="email"
+        required
+      />
+
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        [(ngModel)]="message"
+        required>
+      </textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>

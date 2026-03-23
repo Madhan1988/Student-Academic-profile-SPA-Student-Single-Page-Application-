@@ -1,0 +1,38 @@
+<div class="hero">
+  <div class="hero-content">
+    <h1>Student Dashboard</h1>
+    <p class="subtitle">
+      Modern Single Page Application using Angular
+    </p>
+
+    <div class="info-grid">
+      <div class="info-card blue">
+        <h3>Name</h3>
+        <p>Madhan</p>
+      </div>
+
+      <div class="info-card green">
+        <h3>Course</h3>
+        <p>B.Tech AI & ML</p>
+      </div>
+
+      <div class="info-card purple">
+        <h3>Semester</h3>
+        <p>6</p>
+      </div>
+
+      <div class="info-card orange">
+        <h3>Status</h3>
+        <p>Active</p>
+      </div>
+    </div>
+
+    <button class="action-btn" (click)="loadProfile()">
+      Load Profile
+    </button>
+
+    <div class="message" *ngIf="message">
+      {{ message }}
+    </div>
+  </div>
+</div>

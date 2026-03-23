@@ -1,0 +1,58 @@
+/* ===== Navbar Container ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+
+  background: linear-gradient(135deg, #1f2933, #111827);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Logo ===== */
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ff9800;
+  letter-spacing: 1px;
+}
+
+/* ===== Nav Links Container ===== */
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+/* ===== Nav Buttons ===== */
+.nav-links a {
+  padding: 8px 18px;
+  border-radius: 20px;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #e5e7eb;
+  background: transparent;
+
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  background: #ff9800;
+  color: #111827;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
+}
+
+/* Active Page */
+.nav-links a.active {
+  background: #ff9800;
+  color: #111827;
+  box-shadow: 0 6px 15px rgba(255, 152, 0, 0.5);
+}

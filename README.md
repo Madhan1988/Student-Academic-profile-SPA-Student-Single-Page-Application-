@@ -1,111 +1,59 @@
-# Student-Academic-profile-SPA-Student-Single-Page-Application-
+# StudentSpa
 
-🎓 Student SPA – MEAN Stack Project
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
 
-A Student Single Page Application (SPA) developed using Angular (Frontend) and Node.js + Express (Backend) as part of MEAN Stack Practical.
+## Development server
 
-This project demonstrates routing, component-based architecture, modern UI design, and backend API integration.
+To start a local development server, run:
 
-📌 Project Overview
+```bash
+ng serve
+```
 
-The Student SPA is a portfolio-style web application that includes:
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-Home page with introduction
-About page with academic & career details
-Skills page with animated skill progress
-Contact page with form + backend integration
+## Code scaffolding
 
-The application follows Single Page Application (SPA) principles, ensuring smooth navigation without page reloads.
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-🛠️ Tech Stack
-Frontend
-Angular (Standalone Components)
-HTML5
-CSS3 (Modern UI with gradients & animations)
-TypeScript
-Backend
-Node.js
-Express.js
-REST API
-CORS & Body Parser
-📂 Project Structure
-student-spa/
-│
-├── src/
-│   └── app/
-│       ├── home/
-│       ├── about/
-│       ├── skills/
-│       ├── contact/
-│       ├── app.routes.ts
-│       ├── app.ts
-│       ├── app.html
-│       └── app.css
-│
-├── backend/
-│   ├── server.js
-│   └── package.json
-│
-├── angular.json
-├── package.json
-└── README.md
-✨ Features
-✔ Modern & attractive UI
-✔ Angular routing (Home, About, Skills, Contact)
-✔ Responsive design
-✔ Animated skill progress bars
-✔ Contact form with backend API
-✔ RESTful backend using Express
-✔ CORS enabled for frontend-backend communication
-▶️ How to Run the Project
-1️⃣ Clone Repository
-git clone https://github.com/your-username/student-spa.git
-cd student-spa
-2️⃣ Run Backend Server
-cd backend
-npm install
-npm start
+```bash
+ng generate component component-name
+```
 
-Backend runs at:
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-http://localhost:3000
-3️⃣ Run Angular Frontend
-cd ..
-npm install
-ng serve --no-ssr
+```bash
+ng generate --help
+```
 
-Frontend runs at:
+## Building
 
-http://localhost:4200
-📡 API Details
-POST /contact
+To build the project run:
 
-Used to receive contact form data.
+```bash
+ng build
+```
 
-Request Body:
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-{
-  "name": "User Name",
-  "email": "user@email.com",
-  "message": "Message text"
-}
+## Running unit tests
 
-Response:
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-{
-  "status": "success",
-  "message": "Contact details received successfully"
-}
-🎯 Learning Outcomes
-Understanding Angular standalone components
-Implementing SPA routing
-Designing modern UI using CSS
-Creating REST APIs using Express
-Connecting frontend with backend
-Handling HTTP POST requests
-🚀 Future Enhancements
-MongoDB integration for data storage
-Authentication & login system
-Admin dashboard
-Form validation with backend
-Deployment on cloud platforms
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
